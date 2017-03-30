@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+        "https://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+
+    <definition name="fullLayout" template="/pages/common/layout.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="twoColumns" value="false" />
+        <put-attribute name="keywords" value="" />
+        <put-attribute name="description" value="" />
+        <put-attribute name="header" value="/pages/common/header.jsp" />
+        <put-attribute name="footer" value="/pages/common/footer.jsp" />
+        <!--
+        <put-attribute name="breadcrumbs" value="/pages/common/breadcrumbs.jsp" />
+        <put-attribute name="theme" value="/pages/common/theme.jsp" />
+        <put-attribute name="chrome" value="/pages/common/chrome.jsp" />
+        -->
+        <put-attribute name="body" value="" />
+        <put-attribute name="side" value="" />
+        <put-attribute name="sideNavItem" value="" />
+        <put-attribute name="pageRoot" value="" type="string" />
+    </definition>
+
+    <definition name="/demo/register/create.tiles" extends="fullLayout" >
+        <put-attribute name="title" value="demo.register.create.page.title" />
+        <put-attribute name="body" value="/pages/user/signup.jsp" />
+    </definition>
+
+</tiles-definitions>

@@ -1,0 +1,2 @@
+insert into address values (address_sequence.NEXTVAL, 'Sterling', 'Virginia', 'NewYork', '345092', 'USA');
+insert into user_details values(user_sequence.NEXTVAL, 'arghya.b@gmail.com', 'arghya', 'admin', 'aaa', 'bbb', 100002, 1009886564);
